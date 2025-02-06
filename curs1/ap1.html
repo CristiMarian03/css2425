@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .demo{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 25px;
+            color: green;
+        }
+        .demo2{
+            color:blue;
+            font-size: 30 px;
+            font-weight: bold;
+            
+        }
+    </style>
+  </head>
+  <body>
+    <button id="apasa">Schimba culoarea</button>
+    <button id="apasa2">Schimba div</button>
+    <button id="apasa3">Schimba demo</button>
+    <div id="para">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti
+        libero nemo eum dolorem! Blanditiis cum, dolorum labore fugit tenetur
+        non unde at. Blanditiis accusantium ducimus repellat illo eaque culpa!
+      </p>
+      <p>
+        Repellendus, cum magnam, reprehenderit eveniet facilis veritatis
+        distinctio expedita ratione accusantium nulla quasi autem, unde
+        asperiores aperiam tenetur dolor dolore quia! Rerum ipsa adipisci
+        aperiam quaerat? Perferendis error aliquid praesentium.
+      </p>
+      <p>
+        Neque, vel repudiandae molestias quis aperiam iusto perferendis
+        blanditiis rem natus expedita exercitationem veritatis ducimus saepe
+        dolorem quia nobis, accusantium nemo quo fuga esse nam placeat numquam
+        illo consequatur? Unde!
+      </p>
+      <p>
+        Illum, architecto. Omnis similique sapiente voluptas sint nemo tenetur
+        quasi facilis sit praesentium inventore non magnam officia enim, optio
+        fugit numquam tempore labore minus temporibus quae atque. Adipisci,
+        nihil velit.
+      </p>
+      <p>
+        Deserunt aliquid laboriosam illo fugiat consequatur voluptatum
+        consectetur quam numquam velit eius adipisci impedit obcaecati quisquam,
+        cupiditate aperiam dolorem, beatae neque. Fugiat esse aspernatur amet ea
+        a, quisquam dolore nihil.
+      </p>
+      <p>
+        Molestias, porro? Mollitia quo recusandae reprehenderit eos vel facilis
+        suscipit quas ex voluptatibus in fugit aliquid alias amet consequatur
+        corporis sed rem asperiores, autem facere tempore odio laborum? Nisi,
+        necessitatibus.
+      </p>
+      <p>
+        Accusantium sequi maxime, asperiores iste minus fugiat, harum doloribus
+        exercitationem sint, voluptatibus beatae! Deleniti sit quidem dicta
+        corrupti! Itaque ea, ex temporibus facere exercitationem incidunt unde
+        ratione quibusdam repellendus tenetur.
+      </p>
+      <p>
+        Tenetur error inventore id atque nemo saepe nisi quia fuga ipsam porro
+        deserunt consequatur voluptatum, neque eos, impedit praesentium.
+        Explicabo nulla distinctio necessitatibus beatae blanditiis magni autem
+        veritatis? Aliquam, deleniti.
+      </p>
+      <p>
+        Eaque odio blanditiis ullam maiores mollitia iusto aperiam minus fuga
+        voluptate aspernatur commodi nemo praesentium consequuntur earum,
+        voluptates dicta magni vitae animi nulla quisquam, id ad reiciendis?
+        Deserunt, magni vel.
+      </p>
+      <p>
+        Sapiente officia quia quidem ullam mollitia itaque et accusantium
+        recusandae libero magnam ea fugiat sunt, laboriosam maiores, debitis
+        placeat vel facilis veritatis! Dolorum voluptatem magni veniam
+        similique, qui atque nobis.
+      </p>
+    </div>
+    <p class="demo">232 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi est unde quisquam assumenda nulla, aut, facere soluta excepturi accusantium eum dolor vel temporibus sint labore quidem beatae. Natus, asperiores architecto!</p>
+    <p class="demo">Rerum modi inventore odio, tenetur nisi illum veritatis porro recusandae ratione eos alias reprehenderit officia voluptatum obcaecati id nostrum ut necessitatibus dolorum amet veniam perspiciatis debitis? Asperiores veniam earum hic.</p>
+    <p class="demo">Architecto facere, beatae magni ipsam numquam facilis incidunt officia omnis! Minima perspiciatis rem dolorem ratione eligendi. Neque laboriosam, eos esse voluptas porro perferendis enim eveniet doloribus quod consectetur sunt cupiditate?</p>
+    <p class="demo">Modi deleniti sint aperiam impedit facere dolores nulla quibusdam excepturi! Veritatis incidunt quod aliquid odio dolores modi, consequuntur voluptatibus voluptates eum vel, minima consequatur officia? Soluta accusamus amet esse culpa.</p>
+
+    <script>
+      let btn = document.getElementById('apasa');
+      let p = document.getElementsByTagName('p')
+      let btn2 = document.getElementById('apasa2');
+      let div = document.getElementById('para')
+      let btn3 = document.getElementById('apasa3');
+      let paraDemo = document.getElementsByClassName('demo')
+      console.log('p :>> ', p);
+      btn.addEventListener('click',function(){
+        let arry = [...p];
+        arry.forEach((element) => {
+            element.style.color = "red"
+            element.style.fontSize = "20px";
+        })
+      });
+
+      btn2.addEventListener('click',function(){
+        div.style.cssText = 'background-color: red; border:2px solid black; border-radius:10px; font-size:20px; justify-content '
+
+      });
+      btn3.addEventListener('click',function(){
+        let myArr = [...paraDemo];
+        myArr.forEach((element) =>{
+            element.classList.toggle("demo2");
+        });
+      });
+    
+
+    </script>
+  </body>
+</html>

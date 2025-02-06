@@ -1,0 +1,23 @@
+div{
+    background-color: red;
+    margin: auto;
+   justify-content: center;
+   text-align: center;
+   border: 2px solid black;
+   padding: 2%;
+
+   
+   
+
+
+   
+}
+div > div {
+
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+div > div > div{
+    background-color: blueviolet;
+}
