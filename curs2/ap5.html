@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/ap5.css">
+
+</head>
+<body>
+    <div style="position: relative; width: 640px; height: 640px; margin: 15 px auto;overflow:hidden;" >
+    <ul class="slider">
+<li><img src="../imagini/imagine1.jpg" alt="img1"></li>
+<li><img src="../imagini/imagine2.jpg" alt="img2"></li>
+<li><img src="../imagini/imagine3.png" alt="img3"></li>
+<li><img src="../imagini/imagine4.jpg" alt="img4"></li>
+<li><img src="../imagini/imagine1.jpg" alt="img1"></li>
+
+
+
+
+
+    </ul>
+</div>
+<script>
+    const images =document.getElementsByTagName('img')
+    const slider = document.querySelector('.slider');
+  console.log('images :>> ', images);
+  for(let i = 0; 1<images.length; i++){
+    images[i].addEventListener('mouseover',function(eveniment){
+        slider.style.animation ='none'
+       // alert(1234)
+    })
+  }
+   
+  
+    
+    
+</script>
+</body>
+</html>
