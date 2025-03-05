@@ -1,19 +1,24 @@
 {
   "name": "mydemovite",
-  "type":"module",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "dev":"vite",
-    "build":"vite build"
+    "dev": "vite",
+    "build": "vite build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-   "build":"vite build"
+    "fs-extra": "^11.3.0",
+    "imagemin": "^9.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "sharp": "^0.33.5",
+    "vite": "^6.2.0"
   },
   "devDependencies": {
     "ejs": "^3.1.10",
